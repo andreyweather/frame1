@@ -8,7 +8,7 @@
 import Foundation
 
 
-func frameTest () {
+public func frameTest () {
     
     print ("ok")
 }
