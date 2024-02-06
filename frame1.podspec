@@ -1,4 +1,4 @@
-#
+	#
 #  Be sure to run `pod spec lint frame1.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
-
+  spec.framework  = "Foundation"
 
   spec.author             = { "andreyPogodin" => "andreyweather@gmail.com" }
 
@@ -31,10 +31,10 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "17.0"
 
 
-  spec.source       = { :git => "https://github.com/andreyweather/frame1", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/andreyweather/frame1.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "/Users/andrey.pogodin/Desktop/XCODE\ project/*.{swift}"
+  spec.source_files  = "frame1/*.{swift}"
   
 
   spec.swift_version = "5.0"
